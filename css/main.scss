@@ -1,0 +1,183 @@
+$font-stack: 'Raleway', verdana;
+$curvy-font: 'Lobster', arial;
+$accent-font-color: #F04155;
+$header-bg-color: #FFF7BD;
+$light-blue: rgb(0, 200, 248);
+$off-black: #394949;
+$light-grey: #999999;
+$teal: rgb(89, 196, 197);
+$yellow: rgb(255, 195, 60);
+$beige: rgb(251, 226, 180);
+$coral: rgb(255, 76, 101);
+$off-white: #F5F5F5;
+$white: #FFF;
+$perriwinkle: rgb(69, 70, 91);
+$navy-blue: #1D2951;
+$light-navy-blue: #2D3961;
+$inky-blue: rgb(11, 16, 41);
+$caramel: rgb(197, 137, 64);
+$tan: rgb(210, 168, 94);
+$plum: rgb(142, 50, 91);
+$grey-blue: #A9B7C0;
+$blueberry: #6B7A8F;
+$bg-grain: #D7CEC7;
+$ox-blood: #76323F;
+$dark-grey: #494949;
+$navbar-color: #092935;
+$navbar-text-color: $coral;
+$main-color: #092935;
+$accent-color: $coral;
+$very-light-blue: #BDC9F1;
+$dark-grey-highlight: #595959;
+$black: #000000;
+$go-green: #32CD42;
+$transparent: rgba(237, 237, 237, .2);
+
+
+
+html, body {
+  font-family: $font-stack;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  
+}
+.navbar-default, 
+.navbar {
+  background-color: $inky-blue;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  color: $tan;
+}
+
+.navbar-default .navbar-nav > li > a {
+  padding-right: 25px;
+  font-weight: 900;
+  font-family: $font-stack;
+  color: $caramel;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $tan;
+}
+
+.title-container {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+                              rgba(0, 0, 0, 0.5)
+              ), 
+              url('../img/office-620822_1920.jpg');
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  height: calc(100% - 50px);
+} 
+
+.container {
+  background-color: $navy-blue;
+  height: calc(100% - 50px);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.title-wrapper {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+  margin-left: 100px;
+  top: 20%;
+}
+
+.title-wrapper h1 {
+  font-size: 3.5em;
+  font-family: $font-stack;
+  color: $off-white;
+  padding: 15px;
+}
+
+.login-container {
+  position: relative;
+  width: 300px;
+  top: 20%;
+  margin: 0 auto;
+}
+
+.login-container > form {
+  position: relative;
+  margin: 0 auto;
+}
+
+.login-container > form > label {
+  width: 100%;
+  font-family: $font-stack;
+  color: $very-light-blue;
+}
+
+.txt-field {
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  height: 35px;
+  color: $very-light-blue;
+  background-color: $light-navy-blue;
+  border: none;
+}
+
+.btn-go{
+  font-family: $font-stack;
+  border: none;
+  width: 100%;
+  margin-bottom: 25px;
+  height: 35px;
+  position: relative;
+  margin-top: 15px;
+  background-color: $go-green;
+  color: $white;
+}
+
+.btn-wrapper {  
+  margin-left: 15px;
+  height: 45px;
+  color: $inky-blue;
+  width: 90%;
+}
+
+.btn-wrapper > a {
+  text-decoration: none;
+}
+
+
+.btn-create-account, .btn-login {
+  width: 40%;
+  transition: all .2s;
+  font-weight: 900;
+  background-color: $inky-blue;
+  height: 45px;
+  color: $plum;
+  border: 3px solid $inky-blue;
+  border-radius: 5px;
+}
+
+.btn-login {
+  margin-left: 25px;
+}
+
+.btn-create-account:hover, .btn-login:hover {  
+  color: $inky-blue;
+  background-color: $plum;
+  border-color: $plum;
+}
+
+/*
+ * login page
+ */
