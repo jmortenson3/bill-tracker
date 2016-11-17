@@ -11,13 +11,17 @@
   </head>
 
   <body ng-app="myApp">
-    <div class="title-container container content">
-      <div class="title-wrapper">
-        <h1>About BillTracker.</h1>
-        <div class="btn-wrapper">
-          <a href="create-account.html"><input class="btn-signup" type="button" value="CREATE ACCOUNT"></a>
-          <a href="login.html"><input class="btn-login" type="button" value="LOG IN"></a>
+    <div class="container content formParent">
+      <div class="login-container">
+        <div class="form-title">
+          <h1>Log in</h1>
+          <small></small>
         </div>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method=POST>
+          <div class="input-wrapper"><span class="formGlyph glyphicon-email glyphicon glyphicon-envelope"></span><input type="text" class="txt-field txt-email" name="username" placeholder="email address"></div>
+          <div class="input-wrapper"><span class="formGlyph glyphicon-password glyphicon glyphicon-lock"></span><input type="password" class="txt-field txt-password" name="password" placeholder="password"></div>
+          <div class="btn-go btn-create-account-submit" onClick="javascript:this.parentNode.submit();"><span class="glyphicon glyphicon-arrow-right"></span></div>
+        </form>
       </div>
     </div>
 
