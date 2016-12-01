@@ -1,5 +1,7 @@
 $font-stack: 'Raleway', verdana;
+$dashboard-font-stack: 'Roboto', arial;
 $curvy-font: 'Lobster', arial;
+$dashboard-curvy-font: 'Lobster Two', arial;
 $accent-font-color: #F04155;
 $header-bg-color: #FFF7BD;
 $light-blue: rgb(0, 200, 248);
@@ -31,6 +33,7 @@ $dark-grey: #404D5B;
 $very-light-blue: #BDC9F1;
 $black: #000000;
 $go-green: #32CD68;
+$go-green-dark: #12AD48;
 $transparent: rgba(237, 237, 237, .2);
 $piggy-pink: rgba(246, 120, 125, 1);
 $ice-lolly-tasted: rgba(100, 100, 255, 1);
@@ -244,17 +247,20 @@ table {
       position: relative;
       transition: .1s all ease-out;
       background-color: $navy-blue;
-      height: 74px;
-      width: 74px;
-      padding: 21px;
+      height: 2.1em;
+      width: 2.1em;
+      padding: .55em;
       float: left;
       margin: 0;
       color: $orange;
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
     .focused-glyphicon {
-      font-size: 1.5em;
+      font-size: 2em;
+      padding: .65em;
+      height: 2.3em;
+      width: 2.3em;
     }
     
     .txt-field {
@@ -262,13 +268,13 @@ table {
       z-index: 0;
       transition: .05s all;
       padding: 0;
-      width: 300px;
+      width: 15.625em;
       padding-left: 10px;
       margin-bottom: 50px;
       background-color: $white;
       color: $light-navy-blue;
       font-size: 1.2em;
-      height: 75px;
+      height: 3.906em;
       border: none; 
       border-bottom: 3px solid $navy-blue;
       
@@ -277,32 +283,32 @@ table {
     .txt-field-focused {
       //top: -3px;
       //height: 52px;
-      border-bottom: 4px solid $navy-blue;
+      border-bottom: 3px solid $go-green;
     }
     
     .txt-field-defocused-good {
-      border-bottom: 4px solid $go-green;
+      border-bottom: 3px solid $go-green;
     }
     
     .txt-field-defocused-bad {
-      border-bottom: 4px solid red;
+      border-bottom: 3px solid red;
     }
 
     .btn-go, .btn-login-submit, .btn-create-account-submit {
       font-family: $font-stack;
       transition: all .1s;
-      border: 5px solid $go-green;
-      border-radius: 50%;
-      width: 60px;
+      border: 3px solid $go-green;
+      text-transform: lowercase;
+      width: 10.7em;
       margin-bottom: 25px;
-      height: 60px;
-      left: calc(50% - 30px);
+      height: 2.131em;
       position: relative;
-      margin-top: 15px;
       background-color: $off-white;
-      font-size: 2em;
+      font-weight: 100;
+      font-size: 2.2em;
       color: $go-green;
       text-align: center;
+      font-family: 'Lobster Two';
     }
     
     .btn-create-account-submit > span {
@@ -313,6 +319,8 @@ table {
     .btn-create-account-submit:hover,
     .btn-login-submit:hover {
       cursor: pointer;
+      background-color: $go-green;
+      color: $off-white;
     }
     
     .btn-wrapper {  
@@ -324,9 +332,17 @@ table {
       font-size: 16px;
       margin-bottom: 45px;
     }
-/*
- * login page
- */
+    
+    /*
+     * Dashboard styles
+     */
+    .addBillWrapper {
+      font-size: 12px;
+    }
+    
+    table.table-striped {
+      font-family: $dashboard-font-stack;
+    }
 }
 @media (max-width: 400px) {
     html, body {
